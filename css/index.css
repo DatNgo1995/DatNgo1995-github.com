@@ -4,11 +4,21 @@ nav {
 h1 {
     font-weight: 600;
 }
-#introduction p {
+#introduction p, #introduction a {
     font-size:1.5rem;
 }
-.project-container {
-    background: #fff !important;
+
+#strength {
+    background: #40e0d0;
+
+}
+#projects {
+    background: #fff;
+}
+#introduction {
+    background: #ef476f;
+    color: white;
+    
 }
 .project img{
     height: 100%;
@@ -68,4 +78,8 @@ ul a {
 }
 .logo{
     width: 10rem;
+}
+
+#strength i {
+    font-size: 3rem;
 }
