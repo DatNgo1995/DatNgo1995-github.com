@@ -10,6 +10,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Portfolio</title>
   </head>
   <body>
@@ -26,14 +27,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="#" class="navbar-brand">Dat Ngo</a>
+        <a href="#" class="navbar-brand"><img class="logo" src="./img/logo.jpg"></a>
         <div class="collapse navbar-collapse" id="myTogglerNav">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home</a>
-            <a class="nav-item nav-link" href="#projects">Introduction</a>
+            <a class="nav-item nav-link" href="#introduction">Introduction</a>
             <a class="nav-item nav-link" href="#projects">Projects</a>
-            <a class="nav-item nav-link" href="#">Staff</a>
-            <a class="nav-item nav-link" href="#">Testimonials</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
           </div>
           <!-- navbar -->
         </div>
@@ -42,40 +42,52 @@
       <!-- container -->
     </nav>
     <!-- nav -->
-    <div class="jumbotron jumbotron-fluid m-0">
+    <div class="jumbotron jumbotron-fluid m-0 ">
       <div class="container" id="introduction">
-        <p>
+        <h1>About Me</h1>
+        <p class="m-5">
           Determined Web Developer offering more than 3 years of expertise in
           fast-paced departments. Bilingual and well-spoken with the ability to
           work closely with people of all different backgrounds and
           personalities. Seeking an opportunity to oversee a team of exceptional
           developers in the well-established company.
         </p>
+        <ul class="d-flex justify-content-center p-3">
+          <li class="mr-5"><a href="https://github.com/DatNgo1995"><i class="fab fa-github"></a></i>
+          </li>
+          <li class="mr-5">
+              <a href="mailto:datngotat1995@gmail.com"><i class="fas fa-mail-bulk"></i></a>
+          </li>
+          <li class="mr-5">
+              <a href="https://www.linkedin.com/in/dat-ngo-tat-01461915a/"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <a href="mailto:datngotat1995@gmail.com" class="btn btn-outline-dark float-right mr-5 ,b"> Contact </a>
       </div>
     </div>
-    <div class="jumbotron jumbotron-fluid m-0">
+    <div class="jumbotron jumbotron-fluid m-0 project-container">
       <div class="container" id="projects">
         <h1>My Projects</h1>
-        <div class="row project-content">
-          <div class="project col-4">
+        <div class="row m-4">
+          <div class="project col-4 mb-4">
             <div id="origo" class="inside">
               <img  src="img/origo.PNG" />
-              <span class="title"><span>Origo</span></span>
+              <span class="title"><span>3D print</span></span>
             </div>
           </div>
-          <div class=" project col-4">
+          <div class=" project col-4 mb-4">
             <div id="chess-app" class="inside">
               <img  src="img/chess.PNG" />
-              <span class="title"><span>Chess</span></span>
+              <span class="title"><span>Chess App</span></span>
             </div>
           </div>
-          <div class=" project col-4">
+          <div class=" project col-4 mb-4">
             <div id="song-list" class="inside">
               <img  src="img/song-list.PNG" />
               <span class="title"><span>Song List</span></span>
             </div>
           </div>
-          <div class="project col-4">
+          <div class="project col-4 mb-4">
             <div id="libre" class="inside">
               <img src="img/libre.PNG" />
               <span class="title"><span>Libre</span></span>
@@ -84,6 +96,12 @@
         </div>
       </div>
       <!-- content container -->
+    </div>
+    <div id="contact">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p><i class="far fa-copyright mr-2"></i>2019 All Rights Reserved.</p>
+        <img class="logo" src="./img/logo.jpg">
+      </div>
     </div>
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
